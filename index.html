@@ -80,7 +80,7 @@
     <div class="reviews">
       <div class="container">
       <h2 class="section-title">Довольные коты</h2>
-      <a class="btn" href="#" title="Посмотреть все отзывы">Все отзывы</a>
+      <a class="btn to-all-reviews" href="#" title="Посмотреть все отзывы">Все отзывы</a>
 
       <div class="reviews-list clearfix">
         <blockquote class="review-item">
@@ -99,29 +99,29 @@
     <div class="popular-and-price">
       <div class="container">
       <h2 class="section-title">Популярные товары</h2>
-      <a class="btn" href="#" title="Посмотреть все товары">Каталог</a>
+      <a class="btn to-catalog" href="#" title="Посмотреть все товары">Каталог</a>
 
       <div class="popular-items clearfix">
         <div class="catalog-item">
           <img src="img/glasses-1.jpg" alt="очки «Классика жанра»" width="306" height="206">
           <h3>Очки «Классика жанра»</h3>
-          <b>300 р.</b>
-          <a href="#" class="btn">Описание</a>
-          <a href="#" class="btn">Купить</a>
+          <b class="catalog-item-price"> 300 р.</b>
+          <a href="#" class="btn btn-info">Описание</a>
+          <a href="#" class="btn btn-buy">Купить</a>
         </div>
         <div class="catalog-item">
           <img src="img/glasses-2.jpg" alt="очки «Жалюзи»" width="306" height="206">
           <h3>Очки «Жалюзи»</h3>
-          <b>400 р.</b>
-          <a href="#" class="btn">Описание</a>
-          <a href="#" class="btn">Купить</a>
+          <b class="catalog-item-price"> 400 р.</b>
+          <a href="#" class="btn btn-info">Описание</a>
+          <a href="#" class="btn btn-buy">Купить</a>
         </div>
         <div class="catalog-item">
           <img src="img/glasses-3.jpg" alt="очки «Базилис»" width="306" height="206">
           <h3>Очки «Базилис»</h3>
-          <b>500 р.</b>
-          <a href="#" class="btn">Описание</a>
-          <a href="#" class="btn">Купить</a>
+          <b class="catalog-item-price"> 500 р.</b>
+          <a href="#" class="btn btn-info">Описание</a>
+          <a href="#" class="btn btn-buy">Купить</a>
         </div>
         </div>
       </div>
@@ -162,45 +162,45 @@
 
     <div class="feedback">
       <div class="container">
-      <h2 class="section-title">Остались вопросы?</h2>
-      <p class="feedback-tip">Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
-      <form class="feedback-form" action="/keksby-mail" method="post">
-        <div class="feedback-form-group">
-          <label for="fullname">Представьтесь, пожалуйста:</label>
-          <input type="text" name="fullname" id="fullname">
-        </div>
-        <div class="feedback-form-group">
-          <label for="phone">Контактный телефон:</label>
-          <input type="text" name="phone" id="phone">
-        </div>
-        <div class="feedback-form-group">
-          <label for="email">Электронная почта:</label>
-          <input type="text" name="email" id="email">
-        </div>
-        <div class="checkbox-area">
-          <label>
-            <input type="checkbox" name="subscription">
-            Я согласен получать спам и смс на телефон
-          </label>
-        </div>
-        <div class="feedback-form-group">
-          <label for="topic">Тема обращения:</label>
-          <select name="topic" id="topic">
-            <option value="1">Условия доставки</option>
-            <option value="2">Возврат товара</option>
-            <option value="3">Жалоба в Роспотребнадзор</option>
-          </select>
-        </div>
-        <div class="feedback-form-group">
-          <label for="message">Текст обращения:</label>
-          <textarea name="message" id="message"></textarea>
-        </div>
-        <input class="btn" type="submit" value="Отправить">
-      </form>
+        <h2 class="section-title">Остались вопросы?</h2>
+        <p class="feedback-tip">Свяжитесь с нами и мы развеем оставшиеся у вас сомнения!</p>
+        <form class="feedback-form" action="/keksby-mail" method="post">
+          <div class="feedback-form-group">
+            <label for="fullname">Представьтесь, пожалуйста:</label>
+            <input type="text" name="fullname" id="fullname">
+          </div>
+          <div class="clearfix">
+            <div class="feedback-form-group feedback-form-group-left-part">
+              <label for="phone">Контактный телефон:</label>
+              <input type="text" name="phone" id="phone">
+            </div>
+            <div class="feedback-form-group feedback-form-group-right-part">
+              <label for="email">Электронная почта:</label>
+              <input type="text" name="email" id="email">
+            </div>
+          </div>
+          <div class="checkbox-area">
+            <label>
+              <input type="checkbox" name="subscription">
+              Я согласен получать спам и смс на телефон
+            </label>
+          </div>
+          <div class="feedback-form-group">
+            <label for="topic">Тема обращения:</label>
+            <select name="topic" id="topic">
+              <option value="1">Условия доставки</option>
+              <option value="2">Возврат товара</option>
+              <option value="3">Жалоба в Роспотребнадзор</option>
+            </select>
+          </div>
+          <div class="feedback-form-group">
+            <label for="message">Текст обращения:</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Отправить">
+        </form>
+      </div>
     </div>
-    </div>
-
-
 
     <div class="page-footer">
       <div class="container">
@@ -238,9 +238,9 @@
       <div class="footer-bottom clearfix">
         <div class="footer-social">
           <b>Давайте дружить!</b>
-          <a class="social-btn" href="https://vk.com/htmlacademy">Вконтакте</a>
-          <a class="social-btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
-          <a class="social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">Фейсбук</a>
+          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">Инстаграм</a>
         </div>
         <div class="footer-copyright">
           С <span class="heart">любовью</span> для <a href="https://htmlacademy.ru">HTML Academy</a>
